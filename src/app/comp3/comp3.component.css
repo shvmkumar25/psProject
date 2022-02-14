@@ -1,0 +1,11 @@
+table {
+    width: 90%;
+  }
+  
+  th.mat-sort-header-sorted {
+    color: black;
+  }
+
+  .tablebox{
+    margin: 30px 30px 30px 30px;
+  }

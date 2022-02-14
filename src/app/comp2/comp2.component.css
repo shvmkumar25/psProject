@@ -1,0 +1,17 @@
+.example-card{
+
+    border:2px solid black;  
+   display: flex;
+   /* flex-direction: row; */
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   margin:10px 10px 10px 10px;
+}
+.card{
+   width: 250px;
+   
+} 
+
+.card1{
+   width: 500px;
+}

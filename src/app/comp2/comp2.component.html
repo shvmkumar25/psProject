@@ -1,0 +1,40 @@
+<div class='icons' style="border:2px solid black; width:200px ;margin:5px 5px 5px 10px;display: flex;justify-content: space-evenly;">
+    <button  (click)="changeclass()"><mat-icon >view_module</mat-icon></button>
+    <button (click)="changeclass1()"><mat-icon >view_stream</mat-icon></button>
+    <select  [(ngModel)]="selectedPrice" (change)="valueSelected()">
+        <option>10-20</option>
+        <option>21-30</option>
+        <option>31-40</option>
+        <option>41-50</option>
+        <option>51-60</option>
+        <option>61-70</option>
+        <option>71-80</option>
+        <option>81-90</option>
+        <option>91-100</option>
+    </select>
+    </div>
+    
+    <div *ngIf="!bol" class="example-card"> 
+        
+        <mat-card  *ngFor=" let obj of data"  [ngClass]="{'card':randomclass==true ,'card1': randomclass==false}" > 
+            <mat-card-title>{{obj.name}}</mat-card-title>
+            <mat-card-subtitle>{{obj.price}}</mat-card-subtitle>
+            <mat-card-content>
+              <p>This card indeterminates progress bar.</p>
+              <p>{{obj.Details}}</p>
+            </mat-card-content>
+          
+        </mat-card>
+    </div>
+
+    <div *ngIf="bol" class="example-card">
+        <mat-card  *ngFor=" let obj1 of filtereditems"  [ngClass]="{'card':randomclass==true ,'card1': randomclass==false}" > 
+            <mat-card-title>{{obj1.name}}</mat-card-title>
+            <mat-card-subtitle>{{obj1.price}}</mat-card-subtitle>
+            <mat-card-content>
+              <p>This card indeterminates progress bar.</p>
+              <p>{{obj1.Details}}</p>
+            </mat-card-content>
+          
+        </mat-card>
+    </div>

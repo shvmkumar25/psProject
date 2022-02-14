@@ -1,0 +1,7 @@
+.components{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    background-color: rgb(109, 98, 85);
+    height:45px;
+}
